@@ -8,6 +8,17 @@
                     "Description": "Unique DNS Name for the Storage Account where the Virtual Machine's disks will be placed."
                 }
         },
+        "vmSize": {
+            "type": "string",
+            "defaultValue": "Standard_D1",
+            "allowedValues": [
+                "Standard_D1",
+                "Standard_D2",
+                "Standard_D3",
+                "Standard_D4",
+                "Standard_D5"
+            ]
+        },
         "location": {
             "type": "string",
             "defaultValue": "West US",
@@ -48,7 +59,7 @@
                  },
                 "allowedValues": [
                     "14.04.2-LTS",
-					"14.04-DAILY",
+                    "14.04-DAILY",
                     "15.04",
                     "14.10"
                 ]
